@@ -1,0 +1,96 @@
+<form [formGroup]="calculatorForm" (ngSubmit)="onSubmit()">
+  <!-- LEFT COLUMN -->
+  <div class="form-column">
+    <label>Salt Serving Size [mg]</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="saltSuppServing"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+
+    <label>Magnesium Supplement Serving Size [mg]</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="magSuppServing"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+
+    <label>Potassium Supplement Serving Size [mg]</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="potSuppServing"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+
+    <label>Servings</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input formControlName="servings" matInput placeholder="Placeholder" />
+      </mat-form-field>
+    </p>
+
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit"
+      [disabled]="calculatorForm.invalid"
+    >
+      Submit
+    </button>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="form-column">
+    <label>Sodium Per Serving [mg]</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="saltInServing"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+
+    <label>Magnesium Per Serving [mg]</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="magInServing"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+
+    <label>Potassium Per Serving [mg]</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="potInServing"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+  </div>
+</form>
