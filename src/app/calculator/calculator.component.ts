@@ -68,6 +68,10 @@ export class CalculatorComponent implements OnInit {
     }),
   });
 
+  saltAmount: number = 0;
+  magAmount: number = 0;
+  potAmount: number = 0;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -90,15 +94,28 @@ export class CalculatorComponent implements OnInit {
 
   onSubmit() {
     console.log('form submitted');
-    console.log(this.calculatorForm.get('magDesired')?.value);
 
-    console.log(
-      this.mixAmountCalculate(
-        this.calculatorForm.get('magSuppServing')?.value,
-        this.calculatorForm.get('magInServing')?.value,
-        this.calculatorForm.get('magDesired')?.value,
-        this.calculatorForm.get('servings')?.value
-      )
+    this.magAmount = this.mixAmountCalculate(
+      this.calculatorForm.get('magSuppServing')?.value,
+      this.calculatorForm.get('magInServing')?.value,
+      this.calculatorForm.get('magDesired')?.value,
+      this.calculatorForm.get('servings')?.value
     );
+
+    this.saltAmount = this.mixAmountCalculate(
+      this.calculatorForm.get('saltSuppServing')?.value,
+      this.calculatorForm.get('saltInServing')?.value,
+      this.calculatorForm.get('saltDesired')?.value,
+      this.calculatorForm.get('servings')?.value
+    );
+
+    this.potAmount = this.mixAmountCalculate(
+      this.calculatorForm.get('potSuppServing')?.value,
+      this.calculatorForm.get('potInServing')?.value,
+      this.calculatorForm.get('potDesired')?.value,
+      this.calculatorForm.get('servings')?.value
+    );
+
+    console.log(this.saltAmount, this.magAmount, this.potAmount);
   }
 }
