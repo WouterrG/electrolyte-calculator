@@ -1,7 +1,9 @@
 <form [formGroup]="calculatorForm" (ngSubmit)="onSubmit()">
   <!-- LEFT COLUMN -->
+
   <div class="form-column">
-    <label>Salt Serving Size [mg]</label>
+    <h2>Serving Size</h2>
+    <label>Salt</label>
     <p>
       <mat-form-field appearance="outline">
         <mat-label>amount in mg</mat-label>
@@ -13,7 +15,7 @@
       </mat-form-field>
     </p>
 
-    <label>Magnesium Supplement Serving Size [mg]</label>
+    <label>Magnesium Supplement</label>
     <p>
       <mat-form-field appearance="outline">
         <mat-label>amount in mg</mat-label>
@@ -25,7 +27,7 @@
       </mat-form-field>
     </p>
 
-    <label>Potassium Supplement Serving Size [mg]</label>
+    <label>Potassium Supplement</label>
     <p>
       <mat-form-field appearance="outline">
         <mat-label>amount in mg</mat-label>
@@ -55,9 +57,10 @@
     </button>
   </div>
 
-  <!-- RIGHT COLUMN -->
+  <!-- MIDDLE COLUMN -->
   <div class="form-column">
-    <label>Sodium Per Serving [mg]</label>
+    <h2>Compound Per Serving</h2>
+    <label>Sodium</label>
     <p>
       <mat-form-field appearance="outline">
         <mat-label>amount in mg</mat-label>
@@ -69,7 +72,7 @@
       </mat-form-field>
     </p>
 
-    <label>Magnesium Per Serving [mg]</label>
+    <label>Magnesium</label>
     <p>
       <mat-form-field appearance="outline">
         <mat-label>amount in mg</mat-label>
@@ -81,7 +84,7 @@
       </mat-form-field>
     </p>
 
-    <label>Potassium Per Serving [mg]</label>
+    <label>Potassium</label>
     <p>
       <mat-form-field appearance="outline">
         <mat-label>amount in mg</mat-label>
