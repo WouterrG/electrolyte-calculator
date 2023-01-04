@@ -46,15 +46,6 @@
         <input formControlName="servings" matInput placeholder="Placeholder" />
       </mat-form-field>
     </p>
-
-    <button
-      mat-raised-button
-      color="accent"
-      type="submit"
-      [disabled]="calculatorForm.invalid"
-    >
-      Submit
-    </button>
   </div>
 
   <!-- MIDDLE COLUMN -->
@@ -96,4 +87,56 @@
       </mat-form-field>
     </p>
   </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="form-column">
+    <h2>Desired Ratios</h2>
+    <label>Sodium</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="saltDesired"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+
+    <label>Magnesium</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="magDesired"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+
+    <label>Potassium</label>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>amount in mg</mat-label>
+        <input
+          formControlName="potDesired"
+          matInput
+          placeholder="Placeholder"
+        />
+      </mat-form-field>
+    </p>
+  </div>
+
+  <div class="break"></div>
+
+  <button
+    class="submit-button"
+    mat-raised-button
+    color="accent"
+    type="submit"
+    [disabled]="calculatorForm.invalid"
+  >
+    Submit
+  </button>
 </form>
