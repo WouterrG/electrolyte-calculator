@@ -29,3 +29,8 @@ section {
   justify-content: center;
   width: 120px;
 }
+
+.example-img-container {
+  display: flex;
+  justify-content: center;
+}

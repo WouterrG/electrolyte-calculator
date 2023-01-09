@@ -1,4 +1,15 @@
 <app-shell>
-  <app-example-img></app-example-img>
+  <div class="example-img-container">
+    <app-example-img
+      [imageTitle]="'Magnesium Example'"
+      [imageSrc]="'../assets/mag.png'"
+    >
+    </app-example-img>
+    <app-example-img
+      [imageTitle]="'Potassium Example'"
+      [imageSrc]="'../assets/pot.png'"
+    >
+    </app-example-img>
+  </div>
   <router-outlet></router-outlet>
 </app-shell>

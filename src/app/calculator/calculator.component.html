@@ -137,12 +137,12 @@
       <br />
       {{ saltAmount | number }} grams of Salt
       <br />
-      {{ magAmount | number }} grams of Magnesium
+      {{ magAmount | number : "1.1-1" }} grams of Magnesium
       <br />
-      {{ potAmount | number }} grams of Potassium.
+      {{ potAmount | number : "1.1-1" }} grams of Potassium.
       <br />
       <br />
-      Mix one serving size of {{ servingAmount }} grams
+      Mix one serving size of {{ servingAmount | number : "1.1-1" }} grams
       <br />
       with 500 ml of water.
     </p>

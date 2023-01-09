@@ -24,11 +24,11 @@ interface mixForm {
 })
 export class CalculatorComponent implements OnInit {
   calculatorForm = new FormGroup<mixForm>({
-    magSuppServing: new FormControl('2500', {
+    magSuppServing: new FormControl('2000', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    potSuppServing: new FormControl('500', {
+    potSuppServing: new FormControl('1300', {
       nonNullable: true,
       validators: [Validators.required],
     }),
@@ -37,11 +37,11 @@ export class CalculatorComponent implements OnInit {
       validators: [Validators.required],
     }),
 
-    magInServing: new FormControl('250', {
+    magInServing: new FormControl('420', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    potInServing: new FormControl('250', {
+    potInServing: new FormControl('494', {
       nonNullable: true,
       validators: [Validators.required],
     }),

@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ExampleImgComponent implements OnInit {
   @Input() imageTitle: string = 'Placeholder Title';
-  @Input() imageSrc: string = '../assets/mag.jpg';
+  @Input() imageSrc: string = '';
 
   constructor() {}
 
