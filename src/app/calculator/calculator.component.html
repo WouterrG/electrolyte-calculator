@@ -42,7 +42,7 @@
     <label>Servings</label>
     <p>
       <mat-form-field appearance="outline">
-        <mat-label>amount in mg</mat-label>
+        <mat-label></mat-label>
         <input formControlName="servings" matInput placeholder="Placeholder" />
       </mat-form-field>
     </p>
@@ -129,43 +129,25 @@
   </div>
 
   <!-- OUTCOME -->
-  <div class="form-column">
-    <h2>Desired Ratios</h2>
-    <label>Sodium</label>
+  <div class="form-column" id="outcome-column">
+    <h2 id="outcome-title">What To Mix</h2>
     <p>
-      <mat-form-field appearance="outline">
-        <mat-label>amount in mg</mat-label>
-        <input
-          formControlName="saltDesired"
-          matInput
-          placeholder="Placeholder"
-        />
-      </mat-form-field>
+      Take a kitchen scale and mix:
+      <br />
+      <br />
+      {{ saltAmount | number }} grams of Salt
+      <br />
+      {{ magAmount | number }} grams of Magnesium
+      <br />
+      {{ potAmount | number }} grams of Potassium.
+      <br />
+      <br />
+      Mix one serving size of {{ servingAmount }} grams
+      <br />
+      with 500 ml of water.
     </p>
-
-    <label>Magnesium</label>
-    <p>
-      <mat-form-field appearance="outline">
-        <mat-label>amount in mg</mat-label>
-        <input
-          formControlName="magDesired"
-          matInput
-          placeholder="Placeholder"
-        />
-      </mat-form-field>
-    </p>
-
-    <label>Potassium</label>
-    <p>
-      <mat-form-field appearance="outline">
-        <mat-label>amount in mg</mat-label>
-        <input
-          formControlName="potDesired"
-          matInput
-          placeholder="Placeholder"
-        />
-      </mat-form-field>
-    </p>
+    <br />
+    <p>As a reference, a teaspoon is roughly 5 grams.</p>
   </div>
 
   <div class="break"></div>

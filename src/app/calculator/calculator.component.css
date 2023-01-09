@@ -48,3 +48,11 @@ h2 {
   margin-right: auto;
   margin-bottom: 50px;
 }
+
+#outcome-column {
+  border: none;
+}
+
+#outcome-title {
+  text-align: left;
+}

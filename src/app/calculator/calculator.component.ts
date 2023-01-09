@@ -71,6 +71,8 @@ export class CalculatorComponent implements OnInit {
   saltAmount: number = 0;
   magAmount: number = 0;
   potAmount: number = 0;
+  servingAmount: number = 0;
+  servingCount: any = 1;
 
   constructor() {}
 
@@ -78,6 +80,7 @@ export class CalculatorComponent implements OnInit {
     if (this.calculatorForm) {
       this.calculatorForm.get('saltSuppServing')?.disable();
       this.calculatorForm.get('saltInServing')?.disable();
+      this.calculatorForm.get('saltDesired')?.disable();
     }
   }
 
@@ -115,6 +118,11 @@ export class CalculatorComponent implements OnInit {
       this.calculatorForm.get('potDesired')?.value,
       this.calculatorForm.get('servings')?.value
     );
+
+    this.servingCount = this.calculatorForm.get('servings')?.value;
+
+    this.servingAmount =
+      (this.saltAmount + this.magAmount + this.potAmount) / this.servingCount;
 
     console.log(this.saltAmount, this.magAmount, this.potAmount);
   }

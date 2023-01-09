@@ -1,0 +1,17 @@
+.example-img {
+  width: 400px;
+}
+
+.example-img-container {
+  display: flex;
+}
+
+.position-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.example-img-title {
+  text-align: center;
+}

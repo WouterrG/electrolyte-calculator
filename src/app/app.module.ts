@@ -8,9 +8,10 @@ import { SharedModule } from './shared/shared.module';
 import { CalculatorComponent } from './calculator/calculator.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { ExampleImgComponent } from './example-img/example-img.component';
 
 @NgModule({
-  declarations: [AppComponent, CalculatorComponent],
+  declarations: [AppComponent, CalculatorComponent, ExampleImgComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
