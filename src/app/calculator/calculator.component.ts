@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Observable } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
 
 interface mixForm {
   magSuppServing: FormControl<string>;
@@ -74,7 +77,14 @@ export class CalculatorComponent implements OnInit {
   servingAmount: number = 0;
   servingCount: any = 1;
 
-  constructor() {}
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe([Breakpoints.Handset])
+    .pipe(
+      map((result) => result.matches),
+      shareReplay()
+    );
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit(): void {
     if (this.calculatorForm) {

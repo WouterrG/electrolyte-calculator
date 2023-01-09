@@ -3,6 +3,7 @@ form {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -13,6 +14,16 @@ form {
   flex-direction: column;
   border-right: 1px solid;
   padding-right: 20px;
+}
+
+.form-column-handset {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.form-column-handset h2 {
+  font-size: 25px;
 }
 
 p {
@@ -34,7 +45,7 @@ mat-form-field {
 
 h2 {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: max(1.5vw, 25px);
 }
 
 .break {
@@ -46,11 +57,14 @@ h2 {
   margin-top: 20px;
   width: 100px;
   margin-right: auto;
+  margin-left: auto;
   margin-bottom: 50px;
 }
 
 #outcome-column {
   border: none;
+  width: 222px;
+  padding-right: 0;
 }
 
 #outcome-title {

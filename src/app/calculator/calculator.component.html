@@ -1,7 +1,7 @@
 <form [formGroup]="calculatorForm" (ngSubmit)="onSubmit()">
   <!-- LEFT COLUMN -->
 
-  <div class="form-column">
+  <div [class]="(isHandset$ | async) ? 'form-column-handset' : 'form-column'">
     <h2>Serving Size</h2>
     <label>Salt</label>
     <p>
@@ -49,8 +49,8 @@
   </div>
 
   <!-- MIDDLE COLUMN -->
-  <div class="form-column">
-    <h2>Compound Per Serving</h2>
+  <div [class]="(isHandset$ | async) ? 'form-column-handset' : 'form-column'">
+    <h2>Per Serving</h2>
     <label>Sodium</label>
     <p>
       <mat-form-field appearance="outline">
@@ -89,7 +89,7 @@
   </div>
 
   <!-- RIGHT COLUMN -->
-  <div class="form-column">
+  <div [class]="(isHandset$ | async) ? 'form-column-handset' : 'form-column'">
     <h2>Desired Ratios</h2>
     <label>Sodium</label>
     <p>
@@ -129,7 +129,10 @@
   </div>
 
   <!-- OUTCOME -->
-  <div class="form-column" id="outcome-column">
+  <div
+    [class]="(isHandset$ | async) ? 'form-column-handset' : 'form-column'"
+    id="outcome-column"
+  >
     <h2 id="outcome-title">What To Mix</h2>
     <p>
       Take a kitchen scale and mix:

@@ -33,4 +33,5 @@ section {
 .example-img-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
