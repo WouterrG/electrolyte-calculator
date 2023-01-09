@@ -4,10 +4,17 @@
   margin-bottom: -125px;
 }
 
+.example-img-tablet {
+  width: 400px;
+  margin-top: 0px;
+  margin-bottom: -125px;
+}
+
 .example-img-title {
   text-align: center;
 }
 
 .position-div {
   margin: 10px;
+  margin-top: 40px;
 }
