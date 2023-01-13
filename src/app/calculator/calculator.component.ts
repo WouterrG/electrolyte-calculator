@@ -87,11 +87,11 @@ export class CalculatorComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit(): void {
-    if (this.calculatorForm) {
-      this.calculatorForm.get('saltSuppServing')?.disable();
-      this.calculatorForm.get('saltInServing')?.disable();
-      this.calculatorForm.get('saltDesired')?.disable();
-    }
+    // if (this.calculatorForm) {
+    //   this.calculatorForm.get('saltSuppServing')?.disable();
+    //   this.calculatorForm.get('saltInServing')?.disable();
+    //   this.calculatorForm.get('saltDesired')?.disable();
+    // }
   }
 
   mixAmountCalculate(
