@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ExampleImgComponent {
   @Input() imageTitle: string = 'Placeholder Title';
   @Input() imageSrc: string = '';
+  @Input() buyLink: string = '';
 
   constructor() {}
 }

@@ -3,13 +3,20 @@
     <app-example-img
       [imageTitle]="'Magnesium Example'"
       [imageSrc]="'../assets/mag.png'"
+      [buyLink]="
+        'https://nutricost.com/products/nutricost-magnesium-malate-powder'
+      "
     >
     </app-example-img>
     <app-example-img
       [imageTitle]="'Potassium Example'"
       [imageSrc]="'../assets/pot.png'"
+      [buyLink]="
+        'https://nutricost.com/products/nutricost-potassium-bicarbonate-powder'
+      "
     >
     </app-example-img>
   </div>
   <router-outlet></router-outlet>
+  <app-extra-info id="extra-info"></app-extra-info>
 </app-shell>

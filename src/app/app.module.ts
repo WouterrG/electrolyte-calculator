@@ -9,9 +9,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { ExampleImgComponent } from './example-img/example-img.component';
+import { ExtraInfoComponent } from './extra-info/extra-info.component';
 
 @NgModule({
-  declarations: [AppComponent, CalculatorComponent, ExampleImgComponent],
+  declarations: [AppComponent, CalculatorComponent, ExampleImgComponent, ExtraInfoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

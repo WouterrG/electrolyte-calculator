@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -33,6 +34,7 @@ const modules = [
   MatFormFieldModule,
   MatInputModule,
   MatSnackBarModule,
+  MatExpansionModule,
 ];
 
 @NgModule({
